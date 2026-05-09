@@ -229,6 +229,7 @@ nav ul li a:hover{
     max-width: 860px;
 }
 
+/*Seccion vehiculos*/
 #vehiculos{
     background-color: var(--surface-bg);
     border-bottom: 1px solid var(--border-light);
@@ -246,17 +247,18 @@ nav ul li a:hover{
     align-items: flex-start;
 }
 
-.layout-vehiculos > h2 , p {
+.layout-vehiculos > h2 , .layout-vehiculos > p {
     flex-basis: 100%;
     flex-shrink: 0;
 }
 
+/*Cards reutilizable*/
 .contenedor-card {
     display: grid;
     grid-template-columns: repeat(4, minmax(300px, 1fr));
     gap: 24px;
     min-width: 180px;
-    max-width:300px;
+    max-width: 100%;
 }
 
 .card {
@@ -304,6 +306,7 @@ nav ul li a:hover{
     box-shadow: var(--shadow-sm);
 }
 
+/*Seccion Documentacion*/
 #portal-documentacion{
     background: var(--surface-section-alt);
     border-bottom: 1px solid var(--border-light);
@@ -319,7 +322,65 @@ nav ul li a:hover{
     align-items: flex-start;
 }
 
-.layout-documentacion > h2 , p {
+.layout-documentacion > h2 , .layout-documentacion > p {
     flex-basis: 100%;
     flex-shrink: 0;
+}
+
+/*Seccion actualizar base de datos*/
+#actualizar-base-datos{
+    background-color: var(--surface-bg);
+    border-bottom: 1px solid var(--border-light);
+    max-width: 100%;
+}
+
+.layout-actualizar{
+    margin: 0 auto;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.layout-actualizar > h2 , .layout-actualizar > p {
+    flex-basis: 100%;
+    flex-shrink: 0;
+}
+
+.layout-actualizar > .card{
+    flex: 1 1 280px;
+    min-width: 180px;
+    max-width: 350px;
+    align-items: flex-start;
+    text-align: left;
+}
+
+/*Seccion reportes*/
+#reportes{
+    background: var(--surface-section-alt);
+    border-bottom: 1px solid var(--border-light);
+    max-width: 100%;
+}
+.layout-reportes{
+    margin: 0 auto;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: center;
+}
+.layout-reportes > h2 , .layout-reportes > p {
+    flex-basis: 100%;
+    flex-shrink: 0;
+}
+
+.layout-reportes > .card{
+    flex: 1 1 360px;
+    min-width: 180px;
+    max-width: 450px;
+    align-items: center;
+    text-align: left;
 }
