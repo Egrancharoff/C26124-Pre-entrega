@@ -162,6 +162,7 @@ header{
 /* Navegación */
 nav{
     position: sticky;
+    top: 60px;
     background-color: var(--surface-nav);
     border-bottom: 2px solid var(--accent);
     max-width: 100%;
@@ -206,6 +207,7 @@ nav ul li a:hover{
 
 /*intro*/
 #intro{
+    scroll-margin-top: 110px;
     background: linear-gradient(135deg, var(--gray-900) 0%, var(--gray-700) 100%);
     border-bottom: 3px solid var(--accent);
     max-width: 100%;
@@ -230,10 +232,11 @@ nav ul li a:hover{
 }
 
 /*Seccion vehiculos*/
-#vehiculos{
+#lista-vehiculos{
     background-color: var(--surface-bg);
     border-bottom: 1px solid var(--border-light);
     max-width: 100%;
+    scroll-margin-top: 110px;
 }
 
 .layout-vehiculos{
@@ -311,6 +314,7 @@ nav ul li a:hover{
     background: var(--surface-section-alt);
     border-bottom: 1px solid var(--border-light);
     max-width: 100%;
+    scroll-margin-top: 110px;
 }
 .layout-documentacion{
     margin: 0 auto;
@@ -328,10 +332,11 @@ nav ul li a:hover{
 }
 
 /*Seccion actualizar base de datos*/
-#actualizar-base-datos{
+#actualizar-bases-datos{
     background-color: var(--surface-bg);
     border-bottom: 1px solid var(--border-light);
     max-width: 100%;
+    scroll-margin-top: 110px;
 }
 
 .layout-actualizar{
@@ -362,6 +367,7 @@ nav ul li a:hover{
     background: var(--surface-section-alt);
     border-bottom: 1px solid var(--border-light);
     max-width: 100%;
+    scroll-margin-top: 110px;
 }
 .layout-reportes{
     margin: 0 auto;
@@ -383,4 +389,224 @@ nav ul li a:hover{
     max-width: 450px;
     align-items: center;
     text-align: left;
+}
+
+/*Contacto*/
+#contacto{
+    background: var(--gray-800);
+    border-bottom: 1px solid var(--gray-700);
+    max-width: 100%;
+    scroll-margin-top: 110px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#contacto > h2{
+    color: var(--text-on-dark);
+}
+
+#contacto > p{
+    color: var(--gray-300);
+    font-size: 1.05rem;
+    margin-bottom: -20px;
+}
+
+.formulario-contacto{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.formulario-contacto label{
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--gray-300);
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    display:block;
+
+}
+
+.formulario-contacto input, .formulario-contacto textarea{
+    width: 100%;
+    padding: 12px 16px;
+    background: var(--gray-700);
+    border: 1px solid var(--gray-600);
+    border-radius: 4px;
+    font-size: 0.85rem;
+    letter-spacing: .07em;
+    outline: none;
+    transition: border-color var(--transicion-rapida), background var(--transicion-rapida);
+    color: var(--text-on-dark-secondary);
+}
+
+.formulario-contacto input:focus, .formulario-contacto textarea:focus{
+    background: var(--gray-700);
+    border-color: var(--accent-light);
+    color: var(--text-on-dark);
+}
+/* GRID PRINCIPAL */
+
+.contacto-grid{
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr;
+
+    grid-template-areas:
+        "form contacto"
+        "form mapa"
+        "form redes";
+
+    gap: 20px;
+
+    align-items: stretch;
+
+    margin-top: 32px;
+}
+
+/* FORMULARIO */
+
+.formulario-contacto{
+    grid-area: form;
+
+    width: 100%;
+
+    background: var(--gray-900);
+
+    padding: 32px;
+
+    border-radius: 12px;
+
+    border: 1px solid var(--gray-700);
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* INPUTS */
+
+.formulario-contacto input,
+.formulario-contacto textarea{
+    width: 100%;
+
+    padding: 14px 16px;
+
+    background: var(--gray-700);
+
+    border: 1px solid var(--gray-600);
+
+    border-radius: 6px;
+
+    color: var(--text-on-dark);
+
+    font-size: .95rem;
+}
+
+/* CAJAS DERECHA */
+
+.footer-contacto{
+    grid-area: contacto;
+}
+
+.mapa{
+    grid-area: mapa;
+}
+
+.redes{
+    grid-area: redes;
+}
+
+.footer-contacto,
+.mapa,
+.redes{
+    background: var(--gray-900);
+
+    padding: 24px;
+
+    border-radius: 12px;
+
+    border: 1px solid var(--gray-700);
+}
+
+/* TITULOS */
+
+.footer-contacto h4,
+.redes h4{
+    color: var(--text-on-dark);
+
+    margin-bottom: 16px;
+
+    font-size: 1rem;
+}
+
+/* LISTAS */
+
+.footer-contacto ul,
+.redes-sociales{
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.footer-contacto a,
+.redes-sociales a{
+    color: var(--gray-300);
+
+    transition: color .2s ease;
+}
+
+.footer-contacto a:hover,
+.redes-sociales a:hover{
+    color: var(--accent-light);
+}
+
+/* MAPA */
+
+.mapa iframe{
+    width: 100%;
+
+    height: 260px;
+
+    border: none;
+
+    border-radius: 8px;
+}
+/* FOOTER */
+
+footer{
+    background: var(--surface-footer);
+
+    border-top: 1px solid var(--gray-700);
+
+    padding: 20px 40px;
+
+    text-align: center;
+}
+
+.footer-copy{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.footer-copy p{
+    color: var(--gray-400);
+
+    font-size: .9rem;
+
+    letter-spacing: .03em;
+}
+
+.footer-copy p{
+    color: var(--text-muted);
+    font-size: .9rem;
 }

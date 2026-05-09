@@ -17,7 +17,7 @@
     <nav>
         <ul>
             <li><a href="#top">Inicio</a></li>
-            <li><a href="#vehiculos">Listado de vehiculos</a></li>
+            <li><a href="#lista-vehiculos">Listado de vehiculos</a></li>
             <li><a href="#portal-documentacion">Portal de documentacion</a></li>
             <li><a href="#actualizar-bases-datos">Actualizar bases de datos</a></li>
             <li><a href="#reportes">Reportes</a></li>
@@ -183,36 +183,53 @@
     <section id="contacto">
         <h2>Contacto</h2>
         <p>Si tiene alguna pregunta o necesita asistencia, no dude en contactarnos a través de los siguientes medios:</p>
-        <form action="#" method="post" class="formulario-contacto">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+        
+        <div class="contacto-grid">
+            <form action="#" method="post" class="formulario-contacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
 
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
 
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="18" required></textarea>
 
-            <button type="submit" class="boton">Enviar</button>
-        </form>
+                <button type="submit" class="boton">Enviar</button>
+            </form>
+
+            <div class="footer-contacto">
+                    <h4>Contáctanos</h4>
+                    <ul>
+                        <li><a href="mailto:sga@gmail.com">sga@gmail.com</a></li>
+                        <li><a href="tel:+1234567890">+1 234 567 890</a></li>
+                        <li><a href="#">Dirección: Calle Falsa 123, Ciudad, País</a></li>
+                    </ul>
+            </div>
+
+            <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086123456789!2d-122.41941548468123!3d37.77492977975956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c12345678%3A0xabcdef1234567890!2sCalle%20Falsa%20123%2C%20Ciudad%2C%20Pa%C3%ADs!5e0!3m2!1ses-419!2sus!4v1700000000000" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>  
+                
+            <div class="redes">
+                <h4>Síguenos en redes sociales</h4>
+                <ul class="redes-sociales">
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i>/SGA-sistema-gestion-activos</a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i>/SGA-sistema-gestion-activos</a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i>/SGA-sistema-gestion-activos</a></li>
+                </ul>
+            </div>
+        </div>  
     </section>
 
     <!--Pie de pagina-->
     <footer>
-        <h4>Contáctanos</h4>
-        <ul>
-            <li><a href="mailto:sga@gmail.com">sga@gmail.com</a></li>
-            <li><a href="tel:+1234567890">+1 234 567 890</a></li>
-            <li><a href="#">Dirección: Calle Falsa 123, Ciudad, País</a></li>
-        </ul>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086123456789!2d-122.41941548468123!3d37.77492977975956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c12345678%3A0xabcdef1234567890!2sCalle%20Falsa%20123%2C%20Ciudad%2C%20Pa%C3%ADs!5e0!3m2!1ses-419!2sus!4v1700000000000" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        <h4>Síguenos en redes sociales</h4>
-        <ul class="redes-sociales">
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-        </ul>
-        <p>&copy; 2026 SGA - Sistema de Gestión de Activos. Todos los derechos reservados.</p>
+            <div class="footer-copy">
+                <p>&copy; 2026 SGA - Sistema de Gestión de Activos. Todos los derechos reservados.</p>
+            </div>
+        </div>  
     </footer>
+
+    <script src="https://kit.fontawesome.com/5b5d560904.js" crossorigin="anonymous"></script>
 </body> 
 </html>
